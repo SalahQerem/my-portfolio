@@ -1,0 +1,170 @@
+@media (min-width: 576px) {
+  .top-left-shape {
+    top: -35%;
+    left: -50%;
+  }
+
+  .top-right-shape {
+    top: -35%;
+    right: -50%;
+  }
+
+  .form-container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-left-shape {
+    top: -30%;
+    left: -40%;
+  }
+
+  .top-right-shape {
+    top: -40%;
+    right: -30%;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .upper-personal-img-shape {
+    background-color: #fffaca;
+    top: -50%;
+    right: 50%;
+    width: 580px;
+    height: 580px;
+  }
+
+  .top-right-shape {
+    background-color: #cdf6ff;
+    top: -20%;
+    right: -20%;
+  }
+
+  .top-left-shape {
+    top: -30%;
+    left: -20%;
+  }
+
+  .navbar-collapse {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  header .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 4rem;
+    max-width: 650px;
+    margin-inline: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  footer h2 {
+    font-size: 4rem;
+    max-width: 800px;
+  }
+
+  #personal-links a,
+  footer .footer-links a,
+  abbr {
+    font-size: 1.7rem;
+  }
+
+  #personal-links .links-list li {
+    padding: 0.5rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-list {
+    justify-content: flex-start;
+  }
+
+  .form-container {
+    width: 70%;
+  }
+
+  .least-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 82%;
+  }
+
+  .introduction {
+    width: 75%;
+    font-size: 1.5rem;
+  }
+
+  .top-left-shape {
+    top: -30%;
+    left: -10%;
+  }
+
+  .top-right-shape {
+    top: -20%;
+    right: -15%;
+  }
+
+  .upper-personal-img-shape {
+    top: -30%;
+    right: 15%;
+  }
+
+  .project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  #projects .container {
+    display: block;
+  }
+
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form-container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 79%;
+  }
+
+  .form-container {
+    width: 45%;
+  }
+}
