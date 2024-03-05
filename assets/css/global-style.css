@@ -2,6 +2,7 @@ h1 {
   font-size: 2.2rem;
   max-width: 350px;
   margin-inline: auto;
+  margin-block-start: 8rem;
 }
 
 h2 {

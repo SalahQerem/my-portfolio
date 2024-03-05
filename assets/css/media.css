@@ -53,6 +53,10 @@
     top: 65%;
     left: 30%;
   }
+
+  h1 {
+    padding-block-start: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -90,6 +94,8 @@
     font-size: 4rem;
     max-width: 650px;
     margin-inline: 0;
+    margin-block-start: 0;
+    padding-block-start: 0;
   }
 
   h2 {
@@ -105,8 +111,8 @@
   }
 
   footer h2 {
-    font-size: 4rem;
-    max-width: 800px;
+    font-size: 3rem;
+    max-width: 550px;
   }
 
   #personal-links a,
