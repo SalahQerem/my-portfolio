@@ -8,6 +8,24 @@ const backToTop = document.querySelector("#back-to-top");
 const mainSections = document.querySelectorAll(
   "nav, body > section:not(#personal-links, #back-to-top)"
 );
+const personalImg = document.querySelector(".personal-img");
+const personalInfo = document.querySelector(".personal-info");
+const personalImgSlider = document.querySelector(".personal-img-slider");
+const personalInfoSlider = document.querySelector(".personal-info-slider");
+
+personalImgSlider.style.width = `${personalImg.clientWidth}px`;
+personalImgSlider.style.height = `${personalImg.clientHeight}px`;
+personalInfoSlider.style.width = `${personalInfo.clientWidth}px`;
+personalInfoSlider.style.height = `${personalInfo.clientHeight}px`;
+
+console.log(personalImg.clientWidth);
+
+window.addEventListener("DOMContentLoaded", function () {
+  personalImg.style.right = "0";
+  personalImg.style.opacity = "1";
+  personalInfo.style.top = "0";
+  personalInfo.style.opacity = "1";
+});
 
 window.addEventListener("scroll", function () {
   if (this.window.scrollY > header.offsetTop) {

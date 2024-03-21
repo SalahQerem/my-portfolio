@@ -57,6 +57,11 @@
   h1 {
     padding-block-start: 2rem;
   }
+
+  .personal-img {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -91,8 +96,9 @@
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     max-width: 650px;
+    width: 500px;
     margin-inline: 0;
     margin-block-start: 0;
     padding-block-start: 0;
@@ -160,8 +166,13 @@
 }
 
 @media (min-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+    width: 600px;
+  }
+
   .container {
-    width: 82%;
+    width: 87%;
   }
 
   .introduction {
@@ -184,15 +195,13 @@
     right: 15%;
   }
 
-  .project {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 100%;
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  #projects .container {
-    display: block;
+  .project {
+    max-width: 100%;
   }
 
   .services-wrapper {
@@ -213,9 +222,20 @@
     bottom: 5%;
     right: -35%;
   }
+
+  .personal-img {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 @media (min-width: 1400px) {
+  h1 {
+    font-size: 4rem;
+    max-width: 650px;
+    width: 635px;
+  }
+
   .container {
     width: 79%;
   }
@@ -237,5 +257,10 @@
   .contact-shape {
     top: 65%;
     left: 45%;
+  }
+
+  .personal-img {
+    width: 550px;
+    height: 550px;
   }
 }

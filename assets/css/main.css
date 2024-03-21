@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
 :root {
   --mainColor: #03c2c2;
   --bgSecondaryColor: rgba(7, 12, 19, 0.04);
+  --bgBtnColor: #404152;
 }
 
 body {
@@ -15,44 +14,51 @@ body {
   transition: ease-in-out 0.5s;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  padding-block-end: 0.5rem;
-}
-
-nav ul li .nav-link {
-  position: relative;
-}
-
-nav ul li .nav-link:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  background-color: var(--mainColor);
-  border-radius: 2rem;
-  transition: 0.5s;
-}
-
-nav ul li .nav-link.active::after {
-  width: 100%;
-}
-
-nav ul li .nav-link:hover::after {
-  width: 100%;
-}
-
 nav {
-  position: fixed !important;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   background-color: transparent;
   transition: 0.5s background-color;
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding-block-end: 0.5rem;
+  }
+
+  ul li {
+    .nav-link {
+      position: relative;
+      padding-inline: 0.5rem;
+    }
+
+    .nav-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      background-color: var(--mainColor);
+      border-radius: 2rem;
+      transition: 0.5s;
+    }
+
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  }
+
+  .nav-item {
+    padding-inline: 0.25rem;
+  }
 }
 
 .nav-img {
@@ -66,7 +72,7 @@ nav {
 .resume-link,
 .footer-text a {
   padding: 1rem;
-  background-color: var(--mainColor);
+  background-color: var(--bgBtnColor);
   color: white;
   border-radius: 0.5rem;
   box-sizing: border-box;
@@ -91,11 +97,15 @@ header {
 }
 
 header .container,
-#projects .container,
+.projects,
 #services .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header .container {
+  gap: 1rem;
 }
 
 .top-left-shape {
@@ -124,32 +134,47 @@ header .container,
   height: 680px;
 }
 
-.introduction {
-  max-width: 530px;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
 .personal-img {
-  position: relative;
   border-radius: 2rem;
-  width: fit-content;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: -500px;
+  transition: 1.5s;
+  opacity: 0;
 }
 
 .personal-img img {
   width: 100%;
-  min-width: 450px;
-  max-width: 550px;
+}
+
+.personal-img-slider {
+  position: relative;
 }
 
 .personal-info {
+  width: fit-content;
+  position: absolute;
+  top: -500px;
+  transition: 1.5s;
+  opacity: 0;
+}
+
+.personal-info-slider {
   position: relative;
+}
+
+.introduction {
+  max-width: 450px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto;
 }
 
 #personal-links {
   position: fixed;
   padding-inline: 0.2rem;
-  top: 50%;
+  top: 75%;
   left: 0;
   background-color: white;
   border-top-right-radius: 1rem;
@@ -267,11 +292,15 @@ footer .container {
   height: 680px;
 }
 
+.projects {
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
 .project {
   padding: 1rem;
   background-color: var(--bgSecondaryColor);
   border-radius: 1rem;
-  margin-block: 1rem;
   max-width: 675px;
   position: relative;
 }
@@ -297,7 +326,7 @@ footer .container {
 .project-description a {
   text-decoration: none;
   color: white;
-  background-color: var(--mainColor);
+  background-color: var(--bgBtnColor);
   padding: 1rem;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -385,7 +414,7 @@ footer .container {
 
 .input-group input:focus-visible,
 .input-group textarea:focus-visible {
-  outline: var(--mainColor) auto 1px;
+  outline: var(--bgBtnColor) auto 1px;
 }
 
 .input-group input::placeholder,
@@ -400,7 +429,7 @@ footer .container {
 .form-container button {
   width: fit-content;
   margin-inline-end: auto;
-  background-color: var(--mainColor);
+  background-color: var(--bgBtnColor);
   color: white;
   padding: 1rem 1.5rem;
   border: 0;
@@ -413,7 +442,7 @@ footer .container {
 }
 
 #back-to-top {
-  background-color: var(--mainColor);
+  background-color: var(--bgBtnColor);
   color: white;
   font-size: 1.5rem;
   padding: 1rem 1.2rem;
@@ -474,7 +503,7 @@ footer .links-list li abbr {
   color: white;
   font-size: 2rem;
   transition: 0.5s;
-  background-color: #404152;
+  background-color: var(--bgBtnColor);
   border-radius: 50%;
   margin: 0.5rem;
   width: 60px;
