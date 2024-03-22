@@ -323,19 +323,23 @@ footer .container {
   margin-block-end: 2rem;
 }
 
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
 .project-description a {
   text-decoration: none;
   color: white;
   background-color: var(--bgBtnColor);
-  padding: 1rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
   border-radius: 1rem;
   box-sizing: border-box;
   display: block;
   width: fit-content;
-}
-
-.project-description a i {
-  margin-inline-start: 0.5rem;
+  font-size: 1.8rem;
 }
 
 .service {
