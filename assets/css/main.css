@@ -174,7 +174,7 @@ header .container {
 #personal-links {
   position: fixed;
   padding-inline: 0.2rem;
-  top: 75%;
+  top: 50%;
   left: 0;
   background-color: white;
   border-top-right-radius: 1rem;
