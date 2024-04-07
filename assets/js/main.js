@@ -71,8 +71,6 @@ navlinks.forEach((navlink) =>
   })
 );
 
-// console.log(backToTop.getAttribute("id"));
-
 sayHelloLink.addEventListener("click", function (e) {
   e.preventDefault();
   let targetSection = document.querySelector(sayHelloLink.getAttribute("href"));
