@@ -14,7 +14,6 @@ Please refer to the documentation of each library for more information on how to
 
 ## Live Preview
 
-<h4 align="left">Live Preview is available in the https://incandescent-chimera-fbf9a8.netlify.app/</h4>
 <h4 align="left">Live Preview is available at https://incandescent-chimera-fbf9a8.netlify.app/</h4>
 
 ## Snapshots
